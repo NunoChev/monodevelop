@@ -148,6 +148,7 @@ namespace MonoDevelop.ConnectedServices.Gui.ServicesTab
 			var container = new HBox { Spacing = 0 };
 			container.PackStart (vbox, true);
 			container.PackEnd (addButton, vpos: WidgetPlacement.Start);
+			container.Name = Service.DisplayName.Replace (" ", string.Empty);
 
 			Content = container;
 			ShowDetails = showDetails;
